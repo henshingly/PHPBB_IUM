@@ -1,0 +1,10 @@
+Subject: Du wurden im Forum auf {SITENAME} gelöscht.
+
+Hallo, {USER_NAME}
+
+Es tut uns sehr leid, aber Dein Konto wurde	 gelöscht!
+Der Grund für die Löschung ist, dass Du dich seit mehr als {INTERVAL_DAYS_SUM} Tagen nicht im Forum auf "{SITENAME}" angemeldet hast.
+Wenn Du möchtest, kannst Du dich erneut anmelden.
+Wir hoffen, Dich bald wieder zu sehen.
+
+{EMAIL_SIG}

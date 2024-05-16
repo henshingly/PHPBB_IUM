@@ -1,0 +1,42 @@
+Subject: Wir vermissen Dich!
+
+Hallo, {USERNAME}
+
+Wir sehen, dass Dein letzter Besuch in unserem Forum {SITENAME} am "{LAST_VISIT}" war.
+Es ist schon eine Weile her und wir möchten Dich wissen lassen, dass wir hoffen, Dich bald wiederzusehen!
+
+Falls Du Deine Zugangsdaten vergessen hast, kannst Du diese jederzeit über den folgenden Link abrufen.
+
+{FORGOT_PASS}
+
+Ansonsten kannst Du den Administrator des Forums jederzeit unter dieser E-Mail-Adresse "{ADMIN_MAIL}" kontaktieren.
+Wir hoffen, wir sehen uns bald wieder.
+
+<!-- IF USR_TPC_LIST -->
+Nachfolgend einige Links zu Themen, an denen Sie aktiv waren.	
+
+{% for user_topics in USR_TPC_LIST %}
+    "{{ user_topics.title }}"
+    {{ user_topics.url }}
+
+{% endfor %}
+<!-- ENDIF -->
+
+<!-- IF USR_FRM_LIST -->
+Nachfolgend einige Links zu Themen, bei denen du aktiv warst.
+
+{% for forum_topics in USR_FRM_LIST %}
+    "{{ forum_topics.title }}"
+    {{ forum_topics.url }}
+
+{% endfor %}
+<!-- ENDIF -->
+
+<!-- IF SELF_DELETE_LINK -->
+Klicke auf den folgenden Link, um dein Konto zu löschen.
+
+{SELF_DELETE_LINK}
+
+<!-- ENDIF -->
+
+{EMAIL_SIG}
